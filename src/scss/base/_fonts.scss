@@ -1,11 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-//font-family: 'Lato', sans-serif;
-font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+//font-family: 'Roboto Condensed', sans-serif;
 
-SCSS Миксин:
-$maxWidth: 1280;
-@mixin adaptiv-font($pcSize, $mobSize) {
- $addSize: $pcSize - $mobSize;
- $maxWidth: $maxWidth - 320;
- font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+@font-face {
+	font-family: "Avenir Next";
+	src: url("../fonts/AvenirNext-Bold.eot");
+	src: url("../fonts/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/AvenirNext-Bold.woff2") format("woff2"), url("../fonts/AvenirNext-Bold.woff") format("woff"),
+		url("../fonts/AvenirNext-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gotham Pro";
+	src: url("../fonts/GothamPro-Bold.eot");
+	src: url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro-Bold.woff") format("woff"),
+		url("../fonts/GothamPro-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Avenir Next";
+	src: url("../fonts/AvenirNext-Regular.eot");
+	src: url("../fonts/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/AvenirNext-Regular.woff2") format("woff2"), url("../fonts/AvenirNext-Regular.woff") format("woff"),
+		url("../fonts/AvenirNext-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik One";
+	src: url("../fonts/RubikOne-Regular.eot");
+	src: url("../fonts/RubikOne-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/RubikOne-Regular.woff2") format("woff2"), url("../fonts/RubikOne-Regular.woff") format("woff"),
+		url("../fonts/RubikOne-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gotham Pro";
+	src: url("../fonts/GothamPro.eot");
+	src: url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro.woff") format("woff"),
+		url("../fonts/GothamPro.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
