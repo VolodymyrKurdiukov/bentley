@@ -25,13 +25,11 @@ $(document).ready(function () {
 
 	//=====================================================================================================
 
-	//animated scroll 
-
-	// $("a[href^='#']").click(function () {
-	// 	const _href = $(this).attr("href");
-	// 	$("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
-	// 	return false;
-	// });
+	$('ul.fullscreen2__list').on('click', 'li:not(.fullscreen2__link-active)', function () {
+		$(this)
+			.addClass('fullscreen2__link-active').siblings().removeClass('fullscreen2__link-active')
+			.closest('div.fullscreen2__content').find('div.fullscreen2__body').removeClass('fullscreen2__body-active').eq($(this).index()).addClass('fullscreen2__body-active');
+	});
 
 	//=====================================================================================================
 
