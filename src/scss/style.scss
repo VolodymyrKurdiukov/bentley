@@ -4,7 +4,6 @@
 @import "base/links";
 
 * {
-	font-family: "Lato", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -22,4 +21,5 @@
 @import "blocks/footer";
 
 @import "media/header_media";
+@import "media/fullscreen1_media";
 @import "media/footer_media";

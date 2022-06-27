@@ -60,7 +60,7 @@
 		transition: all 0.3s ease;
 		opacity: 0;
 		visibility: hidden;
-		overflow: auto;
+		overflow: hidden;
 		text-align: left;
 		&.active {
 			left: 0;
@@ -69,7 +69,26 @@
 			transition: all 0.3s ease;
 		}
 	}
-
+	&__label {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 200px;
+		color: #ffffff;
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 0.8px;
+		line-height: 25px;
+		text-transform: uppercase;
+		transition: all 0.3s ease;
+		opacity: 1;
+		visibility: visible;
+		&.active{
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
 	&__logo {
 		position: absolute;
 		width: 200px;
@@ -91,11 +110,6 @@
 	}
 
 	&__list {
-		li {
-			border-bottom: 1px solid #cccccc;
-			padding: 0px 0px 25px 0px;
-			margin: 0px 0px 25px 0px;
-		}
 		&-top {
 			margin: 0px 0px 50px 0px;
 		}
@@ -109,14 +123,30 @@
 		font-size: 20px;
 		font-weight: 700;
 		line-height: 25px;
+		display: block;
+		border-bottom: 1px solid #cccccc;
+		padding: 0px 0px 25px 0px;
+		margin: 0px 0px 25px 0px;
 		&-big {
 			letter-spacing: 0.8px;
 			text-transform: uppercase;
 		}
-		&-arrow{
-			white-space: nowrap;
-			padding: 0px 160px 0px 0px;
-			background: url('../img/icons/arrow_down_menu.svg') right no-repeat;
+		&-arrow {
+			position: relative;
+			margin: 0;
+			&::after {
+				content: "";
+				position: absolute;
+				height: 10px;
+				width: 15px;
+				top: 20%;
+				right: 0px;
+				background: url("../img/icons/arrow_down_menu.svg") 0 0 no-repeat;
+				transition: 0.3s all ease;
+			}
+		}
+		&-m {
+			margin: 25px 0px 25px 0px;
 		}
 	}
 
@@ -141,8 +171,46 @@
 
 	&__logo {
 		width: 120px;
-		img{
+		img {
 			max-width: 100%;
 		}
+	}
+}
+
+.submenu {
+	&__list {
+		display: none;
+		padding: 10px 0px 0px 0px;
+		> li {
+			position: relative;
+			padding: 20px 0px 20px 80px;
+			color: #4a4a4a;
+			transition: 0.3s all ease;
+		}
+	}
+
+	&__link {
+		display: block;
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		line-height: 25px;
+	}
+	&__sidepage {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 100%;
+		background-color: #fff;
+		z-index: 51;
+	}
+}
+
+.sidepage {
+	&__item {
+	}
+
+	&__body {
 	}
 }

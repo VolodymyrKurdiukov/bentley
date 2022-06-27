@@ -53,4 +53,13 @@
 	text-align: center;
 	text-transform: uppercase;
 	border: 5px solid #ffffff;
+	transition: 0.3s all ease;
+	@media (min-width:991.98px){
+		&:hover{
+			background-color: #fff;
+			color:#000;
+			border-radius: 5px;
+			
+		}
+	}
 }

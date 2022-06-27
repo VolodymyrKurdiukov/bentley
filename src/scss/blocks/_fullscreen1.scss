@@ -45,10 +45,27 @@
 		text-align: left;
 		padding: 0px 0px 0px 40px;
 		background: url("../img/icons/location_icon.svg") left no-repeat;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 2px;
+			bottom: -15px;
+			left: 50%;
+			background-color: #fff;
+			transition: 0.3s all ease;
+		}
+	}
+	&__arrow {
+		position: absolute;
+		bottom: 100px;
+		right: 120px;
+		transform: translateX(50%);
 	}
 
 	&__decor {
-		margin: 0px 120px 100px 0px;
+		// margin: 0px 120px 100px 0px;
 	}
 
 	&__image {
@@ -60,4 +77,3 @@
 		z-index: -1;
 	}
 }
-
