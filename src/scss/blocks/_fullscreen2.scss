@@ -5,20 +5,22 @@
 	overflow: auto;
 	align-items: flex-end;
 	&__content {
-		max-width: 560px;
+		width: 560px;
 		background-color: #ffffff;
 		margin: 0px 0px 80px 80px;
 		padding: 120px 80px;
 		opacity: 1;
 		visibility: visible;
 		transition: 0.3s all ease;
-		&.active{
+		position: relative;
+		&.active {
 			opacity: 0;
 			visibility: hidden;
 		}
 	}
 
 	&__title {
+		max-width: 260px;
 		color: #4c4c4c;
 		font-family: "Rubik One";
 		font-size: 35px;
@@ -29,9 +31,14 @@
 	}
 
 	&__list {
-		li{
-			padding: 25px 0;
-			border-bottom: 1px solid #cccccc;
+		margin: 0px -40px;
+		li {
+			padding: 25px 40px;
+			transition: 0.5s all ease;
+			&.active {
+				box-shadow: 0 15px 25px rgba(57, 68, 84, 0.2);
+				background-color: rgba(0, 0, 0, 0.7);
+			}
 		}
 	}
 
@@ -43,6 +50,32 @@
 		letter-spacing: 0.8px;
 		line-height: 25px;
 		text-transform: uppercase;
+		&.active{
+			color:#fff;
+		}
+	}
+
+	&__body {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		transition: 0.5s all ease;
+		left: 85%;
+		top: 45px;
+		&.active {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&__btn {
+	}
+
+	&__arrow {
+		position: absolute;
+		bottom: 100px;
+		right: 85px;
+		z-index: 2;
 	}
 
 	&__image {
@@ -51,76 +84,58 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		z-index: -1;
+		z-index: -2;
 	}
 }
 
-.fullscreen2 {
-
-	&__content {
-	}
-
-	&__title {
-	}
-
-	&__list {
-	}
-
-	&__link {
-	}
-
-	&__link-active {
-	}
-
-	&__body {
-	}
-
-	&__body-active {
-	}
-
-	&__btn {
-	}
-
-	&__image {
-	}
-}
 .fullscreen2-item {
-
-	&__wrapper {
-	}
-
-	&__content {
-	}
-
+	width: 1280px;
+	height: 600px;
+	position: relative;
+	z-index: 2;
+	padding: 70px 80px;
 	&__title {
+		max-width: 480px;
+		color: #ffffff;
+		font-family: "Rubik One";
+		font-size: 35px;
+		letter-spacing: 2px;
+		line-height: 45px;
+		text-transform: uppercase;
+		margin: 0px 0px 40px 0px;
 	}
 
 	&__row {
+		display: flex;
+		margin: 0px 0px 75px 0px;
 	}
 
 	&__column {
 	}
 
 	&__specs {
+		color: #ffffff;
+		font-family: "Avenir Next";
+		font-size: 25px;
+		letter-spacing: 1px;
+		line-height: 35px;
+		margin: 0px 40px 0px 0px;
+		p {
+			margin: 0px 0px 20px 0px;
+		}
 	}
 
 	&__power {
+		@extend .fullscreen2-item__specs;
+		font-weight: 700;
 	}
 
 	&__img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -1;
 	}
 }
-.btn {
-}
-.ibg {
-}
-.fullscreen1 {
-
-	&__arrow {
-	}
-}
-.arrow {
-}
-.goto {
-}
-

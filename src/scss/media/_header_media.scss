@@ -31,12 +31,74 @@
 	}
 }
 @media (max-width: 1199.98px) {
+	.header {
+		height: 160px;
+		&__burger{
+			top: 40px;
+			left: 60px;
+		}
+	}
 }
 @media (max-width: 991.98px) {
 }
 
 @media (max-width: 767.98px) {
+	.header {
+		height: 120px;
+		&__burger{
+			top: 20px;
+			left: 60px;
+		}
+		&__label{
+			display: none;
+		}
+	}
 }
 
 @media (max-width: 575.98px) {
+	.header {
+		height: 90px;
+		&__burger{
+			width: 50px;
+			height: 50px;
+			top: 20px;
+			left: 20px;
+			span {
+				position: absolute;
+				left: 10px;
+				background-color: #000;
+				height: 4px;
+				width: 30px;
+				transition: all 0.3s ease;
+				&:nth-child(1) {
+					top: 10px;
+				}
+				&:nth-child(2) {
+					top: 23px;
+				}
+				&:nth-child(3) {
+					bottom: 10px;
+				}
+			}
+			&.active span:nth-child(1) {
+				transform: rotate(45deg);
+				top: 23px;
+			}
+			&.active span:nth-child(3) {
+				transform: rotate(-45deg);
+				bottom: 23px;
+			}
+			&.active span {
+				transform: scale(0);
+				width: 30px;
+				left: 10px;
+			}
+			&.active {
+				left: 400px;
+			}
+		}
+		&__logo{
+			right: 115px;
+		}
+	}
 }

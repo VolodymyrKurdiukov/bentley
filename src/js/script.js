@@ -25,11 +25,13 @@ $(document).ready(function () {
 
 	//=====================================================================================================
 
-	$('ul.fullscreen2__list').on('click', 'li:not(.fullscreen2__link-active)', function () {
+	$('ul.fullscreen2__list').on('click', 'li:not(.active)', function () {
 		$(this)
-			.addClass('fullscreen2__link-active').siblings().removeClass('fullscreen2__link-active')
-			.closest('div.fullscreen2__content').find('div.fullscreen2__body').removeClass('fullscreen2__body-active').eq($(this).index()).addClass('fullscreen2__body-active');
+			.addClass('active').siblings().removeClass('active')
+			.closest('div.fullscreen2__content').find('div.fullscreen2__body').removeClass('active').eq($(this).index()).addClass('active');
+
 	});
+
 
 	//=====================================================================================================
 
@@ -41,9 +43,9 @@ $(document).ready(function () {
 		$('body,html').animate({ scrollTop: $('.' + el).offset().top + offset }, 500, function () { });
 	});
 
-		//=====================================================================================================
+	//=====================================================================================================
 
-//active point scroll
+	//active point scroll
 	$(document).on("scroll", onScroll);
 
 	//smoothscroll

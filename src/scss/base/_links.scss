@@ -47,6 +47,9 @@
 			background-color: #ffffff;
 		}
 	}
+	@media (max-width: 767.98px) {
+		display: none;
+	}
 }
 .arrow {
 	width: 81px;
@@ -63,6 +66,16 @@
 			animation-play-state: paused;
 		}
 	}
+	@media (max-width: 1199.98px) {
+		width: 65px;
+		height: 65px;
+		img {
+			animation: arrow_media 1.5s ease infinite;
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
+	}
 }
 @keyframes arrow {
 	0% {
@@ -70,6 +83,17 @@
 	}
 	50% {
 		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes arrow_media {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
 	}
 	100% {
 		transform: scale(1);
