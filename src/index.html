@@ -36,7 +36,7 @@
 			<a href="#" class="decor__circle"></a>
 		</div>
 		<header class="header">
-			<div class="header__burger">
+			<div id="burger" class="header__burger">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -46,28 +46,21 @@
 				<div class="menu__row">
 					<div class="menu__column">
 						<ul class="menu__list menu__list-top">
-							<li>
-								<a data-item="0" href="#" class="menu__link menu__link-big  menu__link-arrow">Модельний
+							<li class="menu__li">
+								<a href="#" class="menu__link menu__link-big  menu__link-arrow">Модельний
 									Ряд</a>
 								<ul class="submenu__list">
 									<li>
-										<a href="#" class="submenu__link">Mulsanne</a>
-										<div class="submenu__sidepage sidepage">
-											<div class="sidepage__item">
-												<div class="sidepage__body">
-
-												</div>
-											</div>
-										</div>
+										<a href="#" class="submenu__link submenu__link-1">Mulsanne</a>
 									</li>
 									<li>
-										<a href="#" class="submenu__link">Flying Spur</a>
+										<a href="#" class="submenu__link submenu__link-2">Flying Spur</a>
 									</li>
 									<li>
-										<a href="#" class="submenu__link">Continental</a>
+										<a href="#" class="submenu__link submenu__link-3">Continental</a>
 									</li>
 									<li>
-										<a href="#" class="submenu__link">Bentayga</a>
+										<a href="#" class="submenu__link submenu__link-4">Bentayga</a>
 									</li>
 								</ul>
 							</li>
@@ -95,12 +88,222 @@
 						<div class="menu__logo"><img src="img/menu_logo.png" alt="menu logo"></div>
 					</div>
 				</div>
-
 			</nav>
+
 			<div class="header__logo">
 				<img src="img/logo.svg" alt="Logo">
 			</div>
 		</header>
+		<div class="items">
+			<div class="item-menu__close">
+				<span></span><span></span><span></span>
+			</div>
+			<div class="menu__item item-menu">
+				<div class="item-menu__title">Оберіть свій Bentley</div>
+				<div class="item-menu__row">
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">New Continental GT Speed</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_01.jpg" alt="car"></a>
+							<div class="card__text">Швидкість, розкіш, комфорт</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">New Continental GT Speed Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_02.jpg" alt="car"></a>
+							<div class="card__text">Швидкість, драйв</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_03.jpg" alt="car"></a>
+							<div class="card__text">Непорушна потужність</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8 S Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_06.jpg" alt="car"></a>
+							<div class="card__text">Харизматичний та спритний</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_07.jpg" alt="car"></a>
+							<div class="card__text">Гарчання справжнього монстра</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8 Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_08.jpg" alt="car"></a>
+							<div class="card__text">Швидкість, розкіш, комфорт</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="menu__item item-menu">
+				<div class="item-menu__title">Оберіть свій Bentley</div>
+				<div class="item-menu__row">
+
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_03.jpg" alt="car"></a>
+							<div class="card__text">Непорушна потужність</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_04.jpg" alt="car"></a>
+							<div class="card__text">Сенсаційне відкриття</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8 S</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_05.jpg" alt="car"></a>
+							<div class="card__text">Розкіш спонтанності</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8 S Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_06.jpg" alt="car"></a>
+							<div class="card__text">Харизматичний та спритний</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_07.jpg" alt="car"></a>
+							<div class="card__text">Гарчання справжнього монстра</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8 Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_08.jpg" alt="car"></a>
+							<div class="card__text">Швидкість, розкіш, комфорт</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item item-menu">
+				<div class="item-menu__title">Оберіть свій Bentley</div>
+				<div class="item-menu__row">
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">New Continental GT Speed</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_01.jpg" alt="car"></a>
+							<div class="card__text">Швидкість, розкіш, комфорт</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">New Continental GT Speed Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_02.jpg" alt="car"></a>
+							<div class="card__text">Швидкість, драйв</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_03.jpg" alt="car"></a>
+							<div class="card__text">Непорушна потужність</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_04.jpg" alt="car"></a>
+							<div class="card__text">Сенсаційне відкриття</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8 S</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_05.jpg" alt="car"></a>
+							<div class="card__text">Розкіш спонтанності</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8 S Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_06.jpg" alt="car"></a>
+							<div class="card__text">Харизматичний та спритний</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_07.jpg" alt="car"></a>
+							<div class="card__text">Гарчання справжнього монстра</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8 Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_08.jpg" alt="car"></a>
+							<div class="card__text">Швидкість, розкіш, комфорт</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item item-menu">
+				<div class="item-menu__title">Оберіть свій Bentley</div>
+				<div class="item-menu__row">
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">New Continental GT Speed</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_01.jpg" alt="car"></a>
+							<div class="card__text">Швидкість, розкіш, комфорт</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">New Continental GT Speed Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_02.jpg" alt="car"></a>
+							<div class="card__text">Швидкість, драйв</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_03.jpg" alt="car"></a>
+							<div class="card__text">Непорушна потужність</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_04.jpg" alt="car"></a>
+							<div class="card__text">Сенсаційне відкриття</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8 S</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_05.jpg" alt="car"></a>
+							<div class="card__text">Розкіш спонтанності</div>
+						</div>
+					</div>
+					<div class="item-menu__column">
+						<div class="item-menu__card card">
+							<a href="#" class="card__title">Continental GT V8 S Convertible</a>
+							<a href="#" class="card__img ibg"><img src="img/card/card_06.jpg" alt="car"></a>
+							<div class="card__text">Харизматичний та спритний</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 		<section id="fullscreen1" class="fullscreen1">
 			<div class="fullscreen1__content">
 				<h1 class="fullscreen1__title">2017 Bentley Mulsanne Деталі вирішують все</h1>
@@ -125,70 +328,76 @@
 				</ul>
 				<div class="fullscreen2__body">
 					<div class="fullscreen2-item">
-						<div class="fullscreen2-item__title">Continental GT V8 S Convertible</div>
-						<div class="fullscreen2-item__row">
-							<div class="fullscreen2-item__column">
-								<div class="fullscreen2-item__specs">
-									<p>Об’єм двигуна</p>
-									<p>Потужність двигуна</p>
-									<p>Розгін від 0 до 100 км/ч</p>
+						<div class="fullscreen2-item__content">
+							<div class="fullscreen2-item__title">Continental GT V8 S Convertible</div>
+							<div class="fullscreen2-item__row">
+								<div class="fullscreen2-item__column">
+									<div class="fullscreen2-item__specs">
+										<p>Об’єм двигуна</p>
+										<p>Потужність двигуна</p>
+										<p>Розгін від 0 до 100 км/ч</p>
+									</div>
+								</div>
+								<div class="fullscreen2-item__column">
+									<div class="fullscreen2-item__power">
+										<p>3993 CC</p>
+										<p>572 BHP</p>
+										<p>3.8 sec</p>
+									</div>
 								</div>
 							</div>
-							<div class="fullscreen2-item__column">
-								<div class="fullscreen2-item__power">
-									<p>3993 CC</p>
-									<p>572 BHP</p>
-									<p>3.8 sec</p>
-								</div>
-							</div>
+							<a href="#" class="fullscreen2__btn btn">Повна специфікація</a>
 						</div>
-						<a href="#" class="fullscreen2__btn btn">Повна специфікація</a>
 						<div class="fullscreen2-item__img ibg"><img src="img/fullscreen2_01.jpg" alt="car1"></div>
 					</div>
 				</div>
 				<div class="fullscreen2__body">
 					<div class="fullscreen2-item">
-						<div class="fullscreen2-item__title">Continental GT V8 S Convertible</div>
-						<div class="fullscreen2-item__row">
-							<div class="fullscreen2-item__column">
-								<div class="fullscreen2-item__specs">
-									<p>Об’єм двигуна</p>
-									<p>Потужність двигуна</p>
-									<p>Розгін від 0 до 100 км/ч</p>
+						<div class="fullscreen2-item__content">
+							<div class="fullscreen2-item__title">Continental GT V8 S Convertible</div>
+							<div class="fullscreen2-item__row">
+								<div class="fullscreen2-item__column">
+									<div class="fullscreen2-item__specs">
+										<p>Об’єм двигуна</p>
+										<p>Потужність двигуна</p>
+										<p>Розгін від 0 до 100 км/ч</p>
+									</div>
+								</div>
+								<div class="fullscreen2-item__column">
+									<div class="fullscreen2-item__power">
+										<p>3993 CC</p>
+										<p>572 BHP</p>
+										<p>3.8 sec</p>
+									</div>
 								</div>
 							</div>
-							<div class="fullscreen2-item__column">
-								<div class="fullscreen2-item__power">
-									<p>3993 CC</p>
-									<p>572 BHP</p>
-									<p>3.8 sec</p>
-								</div>
-							</div>
+							<a href="#" class="fullscreen2__btn btn">Повна специфікація</a>
 						</div>
-						<a href="#" class="fullscreen2__btn btn">Повна специфікація</a>
 						<div class="fullscreen2-item__img ibg"><img src="img/fullscreen2_02.jpg" alt="car1"></div>
 					</div>
 				</div>
 				<div class="fullscreen2__body">
 					<div class="fullscreen2-item">
-						<div class="fullscreen2-item__title">Continental GT V8 S Convertible</div>
-						<div class="fullscreen2-item__row">
-							<div class="fullscreen2-item__column">
-								<div class="fullscreen2-item__specs">
-									<p>Об’єм двигуна</p>
-									<p>Потужність двигуна</p>
-									<p>Розгін від 0 до 100 км/ч</p>
+						<div class="fullscreen2-item__content">
+							<div class="fullscreen2-item__title">Continental GT V8 S Convertible</div>
+							<div class="fullscreen2-item__row">
+								<div class="fullscreen2-item__column">
+									<div class="fullscreen2-item__specs">
+										<p>Об’єм двигуна</p>
+										<p>Потужність двигуна</p>
+										<p>Розгін від 0 до 100 км/ч</p>
+									</div>
+								</div>
+								<div class="fullscreen2-item__column">
+									<div class="fullscreen2-item__power">
+										<p>3993 CC</p>
+										<p>572 BHP</p>
+										<p>3.8 sec</p>
+									</div>
 								</div>
 							</div>
-							<div class="fullscreen2-item__column">
-								<div class="fullscreen2-item__power">
-									<p>3993 CC</p>
-									<p>572 BHP</p>
-									<p>3.8 sec</p>
-								</div>
-							</div>
+							<a href="#" class="fullscreen2__btn btn">Повна специфікація</a>
 						</div>
-						<a href="#" class="fullscreen2__btn btn">Повна специфікація</a>
 						<div class="fullscreen2-item__img ibg"><img src="img/fullscreen2_03.jpg" alt="car1"></div>
 					</div>
 				</div>

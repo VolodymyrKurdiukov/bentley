@@ -23,12 +23,32 @@ $(document).ready(function () {
 		$('body').toggleClass('lock');
 	});
 
+	$('.menu__link-arrow').click(function (event) {
+		$('.submenu__list').toggleClass('active');
+
+	});
+
+	$('.item-menu__close').click(function (event) {
+		$('.menu__item').removeClass('active');
+		$('.header__burger').removeClass('lock');
+		$('.item-menu__close').toggleClass('active');
+	});
+
+
 	//=====================================================================================================
 
 	$('ul.fullscreen2__list').on('click', 'li:not(.active)', function () {
 		$(this)
 			.addClass('active').siblings().removeClass('active')
 			.closest('div.fullscreen2__content').find('div.fullscreen2__body').removeClass('active').eq($(this).index()).addClass('active');
+
+	});
+	$('ul.submenu__list').on('click', 'li:not(.active)', function () {
+		$('.header__burger').addClass('lock');
+		$('.item-menu__close').addClass('active');
+		$(this)
+			.addClass('active').siblings().removeClass('active')
+			.closest('.wrapper').find('div.menu__item').removeClass('active').eq($(this).index()).addClass('active');
 
 	});
 
