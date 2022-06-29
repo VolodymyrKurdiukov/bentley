@@ -48,9 +48,6 @@
 		&.active {
 			left: 400px;
 		}
-		&.lock {
-			display: none;
-		}
 	}
 
 	&__menu {
@@ -64,6 +61,7 @@
 		opacity: 0;
 		visibility: hidden;
 		text-align: left;
+		overflow: auto;
 		&.active {
 			left: 0;
 			opacity: 1;
@@ -99,16 +97,15 @@
 		top: 50%;
 		right: 50%;
 		transform: translate(50%, -50%);
+		z-index: 1;
 		img {
 			max-width: 100%;
 		}
 	}
 }
-.menu {
-	padding: 40px 40px 40px 40px;
-	&__row {
-	}
+.items {
 	&__item {
+		overflow: auto;
 		opacity: 0;
 		visibility: hidden;
 		position: fixed;
@@ -118,20 +115,18 @@
 		width: 100%;
 		height: 100%;
 		background-color: #fff;
-		z-index: 2;
+		z-index: 4;
 		&.active {
 			opacity: 1;
 			visibility: visible;
 		}
 	}
-	&__column {
-	}
-
+}
+.menu {
+	padding: 40px 40px 40px 40px;
 	&__list {
 		&-top {
 			margin: 0px 0px 50px 0px;
-		}
-		&-small {
 		}
 	}
 
@@ -150,6 +145,7 @@
 			text-transform: uppercase;
 		}
 		&-arrow {
+			cursor: pointer;
 			position: relative;
 			margin: 0;
 			&::after {
@@ -161,6 +157,11 @@
 				right: 0px;
 				background: url("../img/icons/arrow_down_menu.svg") 0 0 no-repeat;
 				transition: 0.3s all ease;
+			}
+			&.active {
+				&:after {
+					transform: rotate(180deg);
+				}
 			}
 		}
 		&-m {
@@ -200,10 +201,20 @@
 		display: none;
 		padding: 10px 0px 0px 0px;
 		> li {
+			cursor: pointer;
 			position: relative;
 			padding: 20px 0px 20px 80px;
 			color: #4a4a4a;
 			transition: 0.3s all ease;
+			&.active{
+				color: #fff;
+					box-shadow: 0 15px 25px rgba(57, 68, 84, 0.2);
+					background-color: rgba(0, 0, 0, 0.7);
+			}
+		}
+		&.active {
+			position: static;
+			display: block;
 		}
 	}
 
@@ -248,12 +259,11 @@
 	&__close {
 		cursor: pointer;
 		display: none;
-		position: absolute;
+		position: fixed;
 		top: 80px;
 		right: 80px;
 		width: 80px;
 		height: 80px;
-		background-color: #ffffff;
 		transition: all 0.3s ease;
 		z-index: 100;
 		span {

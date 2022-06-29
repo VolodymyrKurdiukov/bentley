@@ -1,32 +1,7 @@
-@media (min-width: 991.98px) {
-	.menu {
-		&:hover {
-			.submenu {
-				&__list {
-					position: static;
-					display: block;
-				}
-			}
-		}
-		&__link {
-			&-arrow {
-				&:hover {
-					&::after {
-						transform: rotate(180deg);
-					}
-				}
-			}
-		}
-	}
-	.submenu {
-		&__list {
-			li {
-				&:hover {
-					color: #fff;
-					box-shadow: 0 15px 25px rgba(57, 68, 84, 0.2);
-					background-color: rgba(0, 0, 0, 0.7);
-				}
-			}
+@media (max-width: 1439.98px) {
+	.item-menu {
+		&__column {
+			flex: 0 0 33.333%;
 		}
 	}
 }
@@ -38,10 +13,57 @@
 			left: 60px;
 		}
 	}
+	.item-menu {
+		&__column {
+			flex: 0 0 50%;
+		}
+		&__close {
+			top: 20px;
+			right: 20px;
+		}
+	}
+}
+@media (max-width: 1160.98px) {
+	.header {
+		&__menu {
+			width: 300px;
+			padding: 20px;
+		}
+		&__burger {
+			&.active {
+				left: 300px;
+			}
+		}
+	}
+	.submenu {
+		&__list {
+			li {
+				padding: 20px;
+			}
+		}
+	}
+	.menu {
+		&__search {
+			padding: 20px 260px 40px 0px;
+		}
+	}
+	.item-menu {
+		padding: 80px 40px 80px 330px;
+	}
 }
 @media (max-width: 991.98px) {
+	.item-menu {
+		&__title {
+			font-size: 30px;
+		}
+		&__column {
+			flex: 0 0 100%;
+		}
+		&__card {
+			padding: 40px 20px 0px 40px;
+		}
+	}
 }
-
 @media (max-width: 767.98px) {
 	.header {
 		height: 120px;
@@ -51,6 +73,22 @@
 		}
 		&__label {
 			display: none;
+		}
+	}
+	.item-menu {
+		&__title {
+			font-size: 20px;
+		}
+		&__row {
+			margin: 0;
+		}
+		&__card {
+			padding: 20px;
+		}
+	}
+	.card {
+		&__title {
+			margin: 0px 0px 15px 0px;
 		}
 	}
 }
