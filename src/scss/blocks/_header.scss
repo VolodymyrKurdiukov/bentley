@@ -200,21 +200,22 @@
 	&__list {
 		display: none;
 		padding: 10px 0px 0px 0px;
+		transition: 0.3s all ease;
 		> li {
 			cursor: pointer;
 			position: relative;
 			padding: 20px 0px 20px 80px;
 			color: #4a4a4a;
 			transition: 0.3s all ease;
-			&.active{
+			&.active {
 				color: #fff;
-					box-shadow: 0 15px 25px rgba(57, 68, 84, 0.2);
-					background-color: rgba(0, 0, 0, 0.7);
+				box-shadow: 0 15px 25px rgba(57, 68, 84, 0.2);
+				background-color: rgba(0, 0, 0, 0.7);
 			}
 		}
 		&.active {
-			position: static;
 			display: block;
+			position:static
 		}
 	}
 

@@ -18,6 +18,11 @@ ibg();
 //Burger
 
 $(document).ready(function () {
+	$("a[href^='#']").click(function () {
+		const _href = $(this).attr("href");
+		$("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+		return false;
+	});
 	$('.header__burger').click(function (event) {
 		$('.header__burger,.header__menu,.header__label,.fullscreen2__content').toggleClass('active');
 		$('body').toggleClass('lock');
@@ -67,6 +72,7 @@ $(document).ready(function () {
 		$('body,html').animate({ scrollTop: $('.' + el).offset().top + offset }, 500, function () { });
 	});
 
+
 	//=====================================================================================================
 
 	// //active point scroll
@@ -110,3 +116,8 @@ $(document).ready(function () {
 // 	});
 // }
 //=====================================================================================================
+$(window).scroll(function () {
+	var top = $(document).scrollTop();
+	if (top < 2900) $(".header__label,.header__logo").css({ display: 'block', transition: ' all 0.5s ease' });
+	else $(".header__label,.header__logo").css({ display: 'none' });
+});

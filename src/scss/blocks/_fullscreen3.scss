@@ -1,0 +1,116 @@
+.fullscreen3 {
+	min-height: 100vh;
+	display: flex;
+	position: relative;
+	overflow: auto;
+	padding: 80px 80px 40px 80px;
+	flex-direction: column;
+	&__top {
+	}
+
+	&__bottom {
+	}
+	&__arrow{
+		position: absolute;
+		bottom: 100px;
+		right: 85px;
+		z-index: 2;
+	}
+}
+.top-fullscreen3 {
+	height: 100%;
+	display: flex;
+	margin: 0px -20px;
+	padding: 0px 0px 40px 0px;
+	&__column {
+		flex: 1 1 25%;
+		padding: 0px 20px;
+		transition: 0.3s all ease;
+		&:first-child{
+			align-self: center;
+		}
+		&-big {
+			flex: 1 1 37.5%;
+		}
+	}
+
+	&__title {
+		color: #4c4c4c;
+		font-family: "Gotham Pro";
+		font-size: 35px;
+		font-style: normal;
+		letter-spacing: 2px;
+		line-height: 45px;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		padding:  435px 0 80px 80px;
+		height: 100%;
+		transition: 0.3s all ease;
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		color: #ffffff;
+		font-family: "Gotham Pro";
+		font-size: 35px;
+		letter-spacing: 2px;
+		line-height: 45px;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	&__img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+}
+
+.bottom-fullscreen3 {
+	display: flex;
+	margin: 0px -20px;
+	&__column {
+		flex: 1 1 33.333%;
+		padding: 0px 20px;
+		transition: 0.3s all ease;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		padding: 237px 0px 80px 80px;
+		height: 100%;
+		transition: 0.3s all ease;
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		color: #ffffff;
+		font-family: "Gotham Pro";
+		font-size: 35px;
+		letter-spacing: 2px;
+		line-height: 45px;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	&__img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+}
+
