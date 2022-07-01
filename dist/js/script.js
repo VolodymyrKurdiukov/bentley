@@ -79,6 +79,11 @@ $(document).ready(function () {
 		} else {
 			$('.pageup').fadeOut().css({ display: 'flex'});
 		}
+		if ($(this).scrollTop() > 3500) {
+			$('.decor').fadeOut();
+		} else {
+			$('.decor').fadeIn();
+		}
 	});
 	$("a[href^='#']").click(function () {
 		const _href = $(this).attr("href");

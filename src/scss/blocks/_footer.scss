@@ -1,51 +1,79 @@
 .footer {
-	background-color: #f7f7f7;
-	padding: 108px 0px;
+	display: flex;
+	flex-direction: column;
+	padding: 110px 40px 55px 40px;
+
 	&__row {
 		display: flex;
+		margin: 0px -40px;
 	}
+
 	&__column {
-		flex: 0 1 33.333%;
+		flex: 0 0 16.667%;
+		padding: 0px 40px;
 	}
 
-	&__adress {
-		width: 236px;
-		color: #848789;
-		font-style: italic;
-		line-height: 17.87px;
-		text-align: left;
-		span {
-			font-size: 16px;
-			font-weight: 700;
+	&__list {
+		li {
+			&:first-child {
+				padding: 0px 0px 25px 0px;
+				border-bottom: 1px solid #cccccc;
+			}
+			margin: 0px 0px 25px 0px;
+			
 		}
 	}
 
-	&__social {
+	&__link {
+		color: #4a4a4a;
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 25px;
+		display: inline-block;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 2px;
+			bottom: -15px;
+			left: 50%;
+			background-color: #4c4c4c;
+			transition: 0.3s all ease;
+		}
+	}
+
+	&__link-big {
+		letter-spacing: 0.8px;
+		text-transform: uppercase;
+	}
+
+	&__bottom {
+	}
+}
+.bottom-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 80px 0px 0px 0px;
+	&__column {
+		flex: 0 0 33.333%;
+	}
+
+	&__copy {
+		color: rgba(0, 0, 0, 0.7);
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 20px;
+		line-height: 35px;
+	}
+
+	&__logo {
 		text-align: center;
-		a{
-			display:inline-block;
-			margin: 0px 7.5px;
-		}
-	}
-
-
-	&__img {
 	}
 
 	&__dev {
-		justify-content: flex-end;
-		display: flex;
-		align-items: center;
-	}
-
-	&__text {
-		line-height: 20px;
-		color: #848789;
-		font-style: italic;
-		line-height: 17.87px;
-		margin: 0px 10px 0px 0px;
-	}
-
-	&__image {
+		@extend .bottom-footer__copy;
+		text-align: right;
 	}
 }
