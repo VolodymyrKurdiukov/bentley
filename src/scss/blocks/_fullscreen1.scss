@@ -5,6 +5,7 @@
 	overflow: auto;
 	align-items: flex-end;
 	justify-content: space-between;
+	min-width: 0;
 	&__content {
 		max-width: 622px;
 		padding: 240px 0px 100px 120px;
@@ -44,7 +45,7 @@
 		line-height: 40px;
 		text-align: left;
 		padding: 0px 0px 0px 40px;
-		background: url("../img/icons/location_icon.svg") left no-repeat;
+		background: url("../../img/icons/location_icon.svg") left no-repeat;
 		position: relative;
 		&:after {
 			content: "";
@@ -62,10 +63,6 @@
 		bottom: 100px;
 		right: 120px;
 		transform: translateX(50%);
-	}
-
-	&__decor {
-		// margin: 0px 120px 100px 0px;
 	}
 
 	&__image {

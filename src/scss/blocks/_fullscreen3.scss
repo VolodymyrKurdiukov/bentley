@@ -3,13 +3,9 @@
 	display: flex;
 	position: relative;
 	overflow: auto;
-	padding: 80px;
+	padding: 80px 80px 40px 80px;
 	flex-direction: column;
-	&__top {
-	}
-
-	&__bottom {
-	}
+	
 	&__arrow{
 		position: absolute;
 		bottom: 100px;

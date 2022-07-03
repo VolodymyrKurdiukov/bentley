@@ -18,8 +18,6 @@
 		height: 100%;
 	}
 
-	&__item {
-	}
 }
 .header-fullscreen4 {
 	&__title {
@@ -58,8 +56,6 @@
 			transform: rotateX(180deg);
 			box-shadow: 0 25px 25px rgba(57, 68, 84, 0.25);
 			background-color: rgba(0, 0, 0, 0.4);
-		}
-		&-less {
 		}
 	}
 }
@@ -124,8 +120,6 @@
 	}
 }
 .body-less {
-	&__body {
-	}
 	&__header {
 		position: relative;
 		padding: 7% 92.87% 50% 7%;
